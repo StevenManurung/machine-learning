@@ -1,0 +1,174 @@
+MACHINE LEARNING
+
+MINGGU 1
+
+SUPERVISED LEARNING 
+- CLASSIFICATION
+- REGRESSION 
+
+UNSUPERVISED
+- CLUSTERING
+  Pengelompokan titik data atau objek yang serupa dan sebagian besar digunakan untuk 
+  	- discovering structur (menemukan struktur_
+	- summarization (ringkasan)
+	- anomaly detection (deteksi anomali)
+- DIMENSION REDUCTION
+  Mengurangi fitur yang berlebihan untuk mempermudah klasifikasi
+- DENSITY ESTIMATION
+  Mengeksplorasi data untuk menemukan beberapa struktur didalamnya
+- MARKET BASKET ANALYSIS
+  teknik permodelan berdasarkan teori bahwa jika anda membeli sekelompok item tertentu, anda akan 
+  lebih cenderung membeli kelompok item lain
+
+REGRESSION 
+Teknik yang digunakan untuk memprediksi nilai kontinu
+cth : memprediksi harga rumah
+- Simple Linear Regression
+- Multiple Linear Regression
+- Regression Trees
+
+CLASSIFICATION
+- Logistic Regression
+- KNN
+- SVM
+- MUlticlass Prediction
+- Decision Tree
+
+CLUSTERING
+- K-Means
+
+-------------------------------------
+| Major Machine Learning Techniques |
+-------------------------------------
+
+- Regression / Estimation
+  Memperdiksi nilai yang berkelanjutan
+  cth : memprediksi harga rumah
+
+- Classification 
+  Memprediksi kelas atau kategori kasus
+  cth : jika sel jinak atau ganas, apakah pelanggan akan bergolak atau tidak
+
+- Clustering
+  Menemukan struktur dari data
+
+- Asssociations
+
+- Anomaly Detection
+  Menemukan kasus abnormal dan tidak biasa
+  cth : Mendeteksi penipuan kartu kredit
+
+- Sequence Mining
+  Memprediksi peristiwa berikutnya
+  cth : aliran klik situs web
+  
+- Dimension Reduction 
+  mengurangi ukuran data
+  
+- Recommendation Systems
+  Mengaitkan preferensi orang dengan orang lain yang memiliki selera yang sama, dan  
+  merekomendasikan item baru kepada mereka
+  cth : buku atau film
+  
+AI : Mencoba membuat komputer cerdas untuk meniru fungsi kognitif manusia, jadi AI merupakan bidang 
+     umum dengan cakupan luas termasuk
+     - visi komputer
+     - pemrosesan bahasa
+     - Kreatifitas dan ringkasan
+
+ML : Cabang AI yang mencakup bagian statistik dari AI. Ini mengarjarkan komputer untuk memecahkan
+     masalah dengan melihat ratusan atau ribuan contoh, belajar dari data yang ada yang kemudian
+     menggunakan pengalaman itu untu memecahkan masalah yang sama dalam situasi baru
+
+DP : Bidang ML yang sangat khusus dimana komputer benar2 dapat belajar dan membuat keputusan 
+     cerdas sendiri
+
+------------------
+| Package Python |
+------------------
+SciPy : Kumpulan algoritma numerik dan alat khusus domain
+	- pemrosesan sinyal
+	- optimasi
+	- statistik
+
+Matplotlib : plot 2d,3d 
+
+Pandas : - Mengimpor data
+ 	 - manipulasi
+	 - analisis
+	 dan menawarkan struktur data dan operasi untuk memanipulasi tabel numerik dan timeseries
+
+SciKIT Learn : Kumpulan algoritma klasifikasi, regresi, dan pengelompokan.
+		- Data Processing
+		- Train/Test split
+		- Algoritma Setup
+		- Model Fitting
+		- Prediction
+		- Evaluation 
+		- Model Export
+
+========================================================================================================
+
+MINGGU 2
+
+REGRESSION (nilai harus kontinu) : membangun model secara akurat memprediksi kasus yang tidak diketahui
+- Variabel Independent : penjelas penyebab keadaan
+- Variabel Dependent   : keadaan, target atau tujuan akhir yang coba diprediksi
+
+TIPE MODEL REGRESSION
+- Simple Regression	: ketika 1 var independen digunakan untuk memprediksi var dependen
+ 	 	  	  cth : prediksi C02emission vs EngineSize
+	- Simple Linear Regression
+		keunggulan
+		- sangat cepat
+		- no parameter tuning
+		- mudah dipahami dan sangat dapat dijelaskan 	
+	- Simple Non-linear Regression
+
+- Multiple Regression	: lebih dari 1 var digunakan untuk memprediksi var dependen 
+			  cth : prediksi C02emission vs EngineSize & Cylinders
+
+
+RUMUS MSE (simple regression)
+y(target) = teta0 + teta1.x1
+Co2Emision = teta0 + teta1.EngineSize
+
+Model Evaluasi 
+- K-fold (setiap kelipatan mengunakan data test yang berbeda beda dari kelipatan lainnya)
+  ++++ 1st
+  ++++ 2nd
+  ++++ 3rd
+  ++++ 4th
+  jika k = 4 kelipatan maka akan terbagi menjadi 4 bagian
+  1st Fold = 25% test 75% train, akurasi = 80%
+  2nd Fold = 25% test 75% train, akurasi = 84%
+  3rd Fold = 25% test 75% train, akurasi = 82%
+  4th Fold = 25% test 75% train, akurasi = 86%
+  Accuracy = (80% + 84% + 82% + 86%)/4 = 83%
+
+=======================================================================================================
+
+MINGGU 4
+
+CLASSIFIACTION
+- KNN
+  Mencari tetangga terdekat dimana K = Jumlah tetangga terdekat.
+  
+  Cara menentukan K yang tepat
+  - pilih K = 1
+  - Gunakan bagian training untuk pemodelan
+  - Hitung tingkat akurasi, coba sampai K = ...
+  - lihat K = .. yang memiliki nilai akurasi yang terbaik.
+
+Metrik : Menghitung keakuratan menggunakan set uji
+- Jaccard index : ukuran 
+
+Out-of-sample adalah data yang berada di luar kumpulan data yang digunakan untuk melatih model
+
+
+
+
+
+
+
+
